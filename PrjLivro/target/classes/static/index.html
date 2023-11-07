@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site dos joguin bão</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body> 
+    <div class="header">
+        <h1>Gerenciamento de Livros</h1>
+    </div>
+    <div class="row">
+    <div class="column side">
+    </div>
+    <p><div class="column middle">
+        <table align="center" cellspacing="19px">
+            <tr>
+                <td>
+                    <img src="fnaf.jpg">
+                </td>
+                <td>
+    <div id="cadastro">
+        <h2>Cadatro dos livros</h2>
+        <form id="cadastroForm">
+            <label for="descricao">Descrição do Livro:</label>
+            <input type="text" id="descricao" name="descricao" required><br>
+
+            <label for="isbn">Isbn do Livro:</label>
+            <input type="text" id="isbn" name="isbn" required><br>
+
+            <button type="submit">Cadastrar</button>
+            <p>
+            <button type="button" onclick="atualizarLivro()">Atualizar</button>
+            <p>
+            <button type="button" onclick="deletarLivro()">Deletar</button>
+            
+        </form>
+    </div>
+    
+    <div id="pesquisa">
+        <h2>Pesquisa de Livros</h2>
+        <form id="pesquisaForm">
+            <label for="searchId">ID do Livro:</label>
+            <input type="text" id="searchId" name="searchId"><br>
+
+            <button type="button" onclick="pesquisarLivro()">Pesquisar</button>
+        </form>
+        <p>
+        <div id="resultadoPesquisa"></div>
+    </div>
+                </td>
+                <td>
+                    <img src="conan.jpg">
+                </td>
+            </tr>
+        </table>
+
+    <script src="main.js"></script>
+    </div>
+    <div class="column side">
+    </div>
+    </div>
+
+</body>
+</html>
